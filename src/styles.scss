@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.button {
+    background: #000000;
+    border-radius: 25px;
+    width: 255px;
+    height: 50px;
+    outline: none;
+}
