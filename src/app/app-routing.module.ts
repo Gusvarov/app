@@ -1,7 +1,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { HomepageComponent } from './homepage/homepage.component';
+import { ThemeSelComponent } from './theme-sel/theme-sel.component';
+import { CountComponent } from './count/count.component';
+import { BusinessDetailsComponent } from './business-details/business-details.component';
+import { CardExampleComponent } from './card-example/card-example.component';
+
+
+const routes: Routes = [
+  { path: ' ', component: HomepageComponent },
+  { path: 'home', component: HomepageComponent },
+  { path: 'theme-selection', component: ThemeSelComponent },
+  { path: 'punches-count', component: CountComponent },
+  { path: 'business-details', component: BusinessDetailsComponent },
+  { path: 'card-example', component: CardExampleComponent },
+  { path: '**', component: HomepageComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -3,10 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { ThemeSelComponent } from './theme-sel/theme-sel.component';
+import { CountComponent } from './count/count.component';
+import { BusinessDetailsComponent } from './business-details/business-details.component';
+import { CardExampleComponent } from './card-example/card-example.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    HomepageComponent,
+    ThemeSelComponent,
+    CountComponent,
+    BusinessDetailsComponent,
+    CardExampleComponent,
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
