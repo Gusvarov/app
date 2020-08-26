@@ -1,11 +1,17 @@
 <div class="container">
     <div class="wrapper">
-        <h1>Don’t lose what you’ve built</h1>
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <button class="button" type="button">Create</button>
-        <a href="#">Register</a>
+        <div class="header">
+            <h1>Register</h1>
+        </div>
+        <div class="fields">
+            <input type="text" class="text-input" placeholder="Email">
+            <input type="text" class="text-input" placeholder="Re-enter Email">
+            <input type="text" class="text-input" placeholder="Password">
+            <input type="text" class="text-input" placeholder="Re-enter Password">
+        </div>
+        <div class="btns">
+            <button class="button" type="button">Register</button>
+            <p (click)="openSignInPopup()">Login</p>
+        </div>
     </div>
 </div>
