@@ -1,5 +1,40 @@
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     height: 100vh;
+
+    .phone-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .circles {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 50%;
+
+            .circle-item {
+                margin-bottom: 24px;
+
+                height: 64px;
+                width: 54px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 33px;
+                color: #9DA2AC;
+                border-radius: 50%;
+                background: white;
+            }
+        }
+
+        .line {
+            border: white;
+            height: 3px;
+        }
+
+    }
 }
