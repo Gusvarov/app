@@ -1,5 +1,6 @@
 .container {
     width: 1280px;
+    height: 100%;
     margin: 0 auto;
     border: 1px solid red;
 }
@@ -11,6 +12,26 @@ h1 {
     font-size: 36px;
     line-height: 45px;
     color: #000000;
+}
+
+h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.0075em;
+    color: #000000;
+}
+
+p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 31px;
+    color: #4D4D4D;
+    opacity: 0.6;
 }
 
 .button {
