@@ -41,7 +41,7 @@ $app-theme: mat-light-theme((
     border: 1px solid red;
 }
 
-h1 {
+h1.title {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -50,7 +50,7 @@ h1 {
     color: #000000;
 }
 
-h2 {
+h2.subtitle {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -60,7 +60,7 @@ h2 {
     color: #000000;
 }
 
-p {
+p.text {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -134,4 +134,4 @@ p {
     line-height: 22px;
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: #E5E5E5; }
