@@ -1,0 +1,30 @@
+header {
+    width: 1280px;
+    height: 100px;
+    margin: auto;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .first-section {
+            margin-left: 35%;
+
+            p:first-child {
+                margin-bottom: -10px;
+            }
+        }
+        
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: 0.0075em;
+            color: #000000;
+        }
+    }
+}
