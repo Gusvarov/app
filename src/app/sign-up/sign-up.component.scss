@@ -1,0 +1,51 @@
+.container {
+    width: 707px;
+    height: 716px;
+    background: #E9ECF3;
+    border-radius: 15px;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        align-items: center;
+
+        .header {
+            padding-top: 100px;
+        }
+
+        .fields {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .btns {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            button {
+                color: #ffffff;
+                margin-bottom: 50px;
+                cursor: pointer;
+            }
+            
+            p {
+                text-align: center;
+                cursor: pointer;
+                text-decoration-line: underline;
+                color: #3190FF;
+            }
+        }
+
+        h1 {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 45px;
+        }
+    }
+}

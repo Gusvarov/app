@@ -29,11 +29,15 @@
 
             button {
                 color: #ffffff;
+                cursor: pointer;
             }
             
-            a {
+            p {
                 text-align: center;
                 margin-top: 50px;
+                cursor: pointer;
+                text-decoration-line: underline;
+                color: #3190FF;
             }
         }
 
