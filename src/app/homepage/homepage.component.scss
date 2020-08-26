@@ -1,0 +1,38 @@
+.container {
+    width: 1440px;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 800px;
+    
+        .left-section {
+            margin-left: 189px;
+    
+            h1 {
+                width: 350px;
+                margin-bottom: 50px;
+                line-height: 29px;
+            }
+    
+            p {
+               color: #000000;
+               margin-bottom: -2px;
+               font-weight: bold;
+            }
+    
+            button {
+                color: #ffffff;
+                cursor: pointer;
+                width: 183px;
+                height: 35px;
+                border-radius: 5px;
+            }
+        }
+    
+        .right-section {
+            margin-right: 52px;
+        }
+    }
+}
