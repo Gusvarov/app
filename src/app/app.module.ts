@@ -12,6 +12,7 @@ import { CardExampleComponent } from './card-example/card-example.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
