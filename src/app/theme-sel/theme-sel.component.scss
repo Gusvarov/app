@@ -1,5 +1,60 @@
-.container{
+.container {
+
     display: flex;
     justify-content: space-between;
-    
+    height: 100vh;
+    overflow-y: hidden;
+
+    .theme-sel {
+        width: 60%;
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 29px;
+        }
+
+        .pics {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            height: 100%;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+           
+            
+            .pic-item {
+                width: 160px;
+                height: 243px;
+                margin-bottom: 40px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .phone-next {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid red;
+
+        .phone-box {
+            margin-bottom: 40px;
+            width: 238px;
+            height: 517px;
+            border: 4px solid black;
+            border-radius: 35px;
+        }
+    }
 }
