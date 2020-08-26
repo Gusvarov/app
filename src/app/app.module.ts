@@ -11,8 +11,10 @@ import { BusinessDetailsComponent } from './business-details/business-details.co
 import { CardExampleComponent } from './card-example/card-example.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { DialogComponent } from './business-details/dialog/dialog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     BusinessDetailsComponent,
     CardExampleComponent,
     SignInComponent,
-    SignUpComponent
+    SignUpComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
