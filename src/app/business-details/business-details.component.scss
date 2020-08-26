@@ -1,0 +1,56 @@
+.subline {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 31px;
+    margin-top: 0px;
+    margin-bottom: 73px;    
+}
+.main-header {
+    margin-bottom: 0px;
+}
+.warning-text {
+    color: #EC2A00;
+    margin-top: 0px;
+    margin-left: 300px;
+
+}
+.sub-header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 32px;
+
+    /* identical to box height, or 131% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.0075em;
+
+    color: #000000;
+}
+
+.remove-button{
+    background: #EC2A00;
+    opacity: 0.87;
+    border-radius: 15px;
+    width: 44px;
+    height: 44px;
+    margin-left: 30px;
+}
+.add-button{
+    background: #000000;
+    opacity: 0.87;
+    border-radius: 15px;
+    width: 44px;
+    height: 44px;
+    margin-left: 430px;
+}
+
+.location-block{
+    margin-bottom: 32px;
+}
+/* icon/navigation/close_24px */
+
