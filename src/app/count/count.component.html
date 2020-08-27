@@ -1,3 +1,4 @@
+<app-header></app-header>
 <div class="container">
   <div class="adding-info">
     <h1 class="title">Number of punches</h1>
@@ -5,12 +6,13 @@
     <div class="counter-section">
       <h2 class="subtitle">Reward (Optional):</h2>
       <p class="text">Set the rewards your customers will receive (up to 18 characters).</p>
-      <input type="text" class="text-input" [(ngModel)]="reward" maxlength="18">
+      <input  matInput class="text-input" [(ngModel)]="reward" maxlength="18">
       <div class="counter">
         <button class="btn" (click)="increment()">+</button>
         <h3>{{ counter }}</h3>
         <button class="btn" (click)="decrement()"><p>-</p></button>
       </div>
+      
     </div>
   </div>
   <div class="phone-next">
@@ -25,7 +27,10 @@
         <p class="text">{{ reward }}</p>
       </div>
     </div>
-    <button class="button" routerLink="/business-details" routerLinkActive="active">Next</button>
+    <button mat-button
+            class="button"
+            routerLink="/business-details"
+            routerLinkActive="active">Next</button>
   </div>
 
 </div>

@@ -1,3 +1,4 @@
+<app-header></app-header>
 <div class="container">
   <div class="theme-sel">
     <h1 class="title">Select your name</h1>
@@ -12,5 +13,8 @@
     <div class="phone-box" *ngFor="let pic of selectedPic" style="background: url(../../assets/images/{{pic.id}}.png);">
 
     </div>
-    <button class="button" routerLink="/punches-count" routerLinkActive="active">Next</button>
+    <button mat-button
+            class="button" 
+            routerLink="/punches-count"
+            routerLinkActive="active">Next</button>
   </div>
