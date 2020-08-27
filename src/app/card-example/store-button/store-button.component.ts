@@ -16,4 +16,14 @@ export class StoreButtonComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  externalLink() {
+    if( this.coloringStyle == "Grey") {
+      if( this.storeType == "Mac") {
+        return "https://www.apple.com/"
+      } else return "https://www.google.com/";
+    } else  if( this.storeType == "Mac") 
+        return "https://www.apple.com/ios/app-store/";
+        else return "https://play.google.com/store";
+  }
+
 }
