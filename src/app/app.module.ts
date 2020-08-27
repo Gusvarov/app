@@ -48,8 +48,8 @@ import { DataService } from './data.service';
     MatInputModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    
-    
+
+
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

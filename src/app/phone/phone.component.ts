@@ -9,6 +9,7 @@ export class PhoneComponent implements OnInit {
   selectedPic = [
     { id: 1 }
   ];
+  
   reward=''
   circles = [
     // { id: 1 },
