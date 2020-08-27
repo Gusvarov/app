@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-phone',
@@ -6,20 +7,20 @@ import { Component, OnInit, Input, Output } from '@angular/core';
   styleUrls: ['./phone.component.scss']
 })
 export class PhoneComponent implements OnInit {
-  selectedPic = [
-    { id: 1 }
-  ];
-  reward=''
+  cardData
+  reward = ''
   circles = [
     // { id: 1 },
     // { id: 2 },
   ]
   // @Input() pic
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
-  
-    
+    this.cardData = this.dataService.cardData.value
+    // let a = this.dataService.cardData.value.configuration.templateId
+    // console.log(a)
+
   }
 
 }

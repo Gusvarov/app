@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-theme-sel',
@@ -7,28 +8,33 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ThemeSelComponent implements OnInit {
   pictures = [];
-   selectedPic = [
-    { id: 1 }
-  ]
+  selectedPic = [];
+  // selectedPic = [
+  //   { id: 1 }
+  // ]
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
     for (let i = 1; i <= 16; i++) {
-      this.pictures.push({
-        id: i
-      })
+      // this.pictures.push({
+      //   id: i
+      // })
+      this.pictures.push(i)
     }
+    // console.log(this.pictures)
 
   }
-  setColor(e) {
-    this.selectedPic.pop();
-    this.selectedPic.push({
-      id: e.target.alt
-    });
- 
+  setPicture(e) {
+    // this.selectedPic.pop();
+    // this.selectedPic.push({
+    //   id: e.target.alt
+    // });
+    
+    this.dataService.setPicture(e);
+    
   }
-  addCircles(){
+  addCircles() {
 
   }
 }

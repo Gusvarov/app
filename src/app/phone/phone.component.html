@@ -1,10 +1,11 @@
-<div class="phone-box" *ngFor="let pic of selectedPic" style="background: url(../../assets/images/{{pic.id}}.png);">
+<div class="phone-box" style="background: url(../../assets/images/{{ cardData.configuration.templateId }}.png);">
   <div [ngClass]="{circles: circles.length<=8,circles_m: circles.length>8,circles_l: circles.length<=2}">
     <div class="circle-item" *ngFor="let circle of circles">{{ circle.id }}</div>
 
   </div>
-  <div class="details">
+  <!-- <div class="details">
     <hr class="line">
     <p class="text">{{ reward }}</p>
-  </div>
+  </div> -->
 </div>
+

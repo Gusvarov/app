@@ -5,7 +5,7 @@
     <p class="text">Can be changed later</p>
     <div class="pics">
       <div class="pic-item" *ngFor="let pic of pictures">
-        <img src='../../assets/images/{{ pic.id }}.png' alt="{{pic.id}}" (click)="setColor($event)">
+        <img src='../../assets/images/{{ pic }}.png' alt="{{pic}}" (click)="setPicture(pic)">
       </div>
     </div>
   </div>
