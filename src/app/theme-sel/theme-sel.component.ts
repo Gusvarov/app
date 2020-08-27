@@ -17,18 +17,21 @@ export class ThemeSelComponent implements OnInit {
 
   ngOnInit() {
     for (let i = 1; i <= 16; i++) {
-      this.pictures.push({
-        id: i
-      })
+      // this.pictures.push({
+      //   id: i
+      // })
+      this.pictures.push(i)
     }
+    // console.log(this.pictures)
 
   }
-  setColor(e) {
+  setPicture(e) {
     // this.selectedPic.pop();
     // this.selectedPic.push({
     //   id: e.target.alt
     // });
-    this.dataService.setColor(e);
+    
+    this.dataService.setPicture(e);
     
   }
   addCircles() {

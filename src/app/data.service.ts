@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { IData } from './data'
 import { renderFlagCheckIfStmt } from '@angular/compiler/src/render3/view/template';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class DataService {
-  uid: IData = {
+  cardData = new BehaviorSubject<IData>({
     buisnessDetails: {
       buisnessName: null,
       locations: [],
@@ -17,12 +18,17 @@ export class DataService {
       count: null,
       title: null
     }
-  }
+  })
+
   constructor() { }
 
-  setColor(e) {
-    this.uid.configuration.templateId = e.target.alt
-   console.log(this.uid.configuration.templateId)
+  setPicture(e) {
+    let model = this.cardData.value;
+    model.configuration.templateId = e
+    // console.log(model.configuration.templateId)
+    console.log(model)
+    
+
   }
 }
 
