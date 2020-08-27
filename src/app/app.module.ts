@@ -16,6 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { PhoneComponent } from './phone/phone.component';
 
+import { StoreButtonComponent } from './card-example/store-button/store-button.component';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -29,13 +31,15 @@ import { PhoneComponent } from './phone/phone.component';
     SignInComponent,
     SignUpComponent,
     PhoneComponent,
+    StoreButtonComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    FormsModule
+    FormsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

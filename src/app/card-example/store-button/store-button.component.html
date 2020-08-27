@@ -1,0 +1,16 @@
+<a [href]="externalLink()">
+    <button class="store-button" [ngClass]="coloringStyle === 'Grey' ? 'grey-button': 'black-button'">
+  
+        <img *ngIf="storeType == 'Mac'" class="store-logo" 
+        [src]="coloringStyle === 'Black' ? '../../assets/images/mac1.png' : '../../assets/images/macBlack.png'" alt=""
+        >
+        <img *ngIf="storeType == 'Android'" class="store-logo" src="../../assets/images/google-play.png" alt="">
+
+        <div class="text-wrapper">
+            <span class="top-mac-text">{{storeType === "Mac" ? "Availible on the" : "Get it on"}}</span>
+            <br/>
+            <span class="bottom-mac-text">{{storeType === "Mac" ? "App Store" : "Play Market"}}</span>
+        </div>
+
+    </button>
+</a>

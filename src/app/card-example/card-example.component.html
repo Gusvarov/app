@@ -2,17 +2,25 @@
 <div class="container">
     <div class="phone-next">
         <div class="phone-box">
-    
         </div>
-        <button class="button">Create</button>
     </div>
     <div class="app-start-area">
         <h1 class="title">Get the app to start</h1>
         <p class="sub-text">Scan the QR code or click on the store button</p>
         <img class="qr-code" src="../../assets/images/qrcode.png" alt="">
-        <button class="button">
-            <img src="../../assets/images/mac1.png" alt="">
-            <p class="top-mac-text">Available on the </p>
-        </button>
+        <div class="store-button-wrapper">
+            <app-store-button storeType="Mac" coloringStyle="Black"></app-store-button>
+            <app-store-button storeType="Android" coloringStyle="Black"></app-store-button>
+        </div>
+
+    </div>
+    <div class="footer">
+        <hr class="horizontal-line">
+        <div class="store-button-wrapper">
+            <app-store-button storeType="Mac" coloringStyle="Grey"></app-store-button>
+            <span class="middle-text">Your clients will use a dedicated app<br>Get it here</span>
+            <app-store-button storeType="Android" coloringStyle="Grey"></app-store-button>
+        </div>
     </div>
 </div>
+

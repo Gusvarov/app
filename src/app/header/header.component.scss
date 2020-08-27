@@ -16,6 +16,12 @@ header {
                 margin-bottom: -5px;
             }
         }
+
+        .last-section {
+            p {
+                cursor: pointer;
+            }
+        }
         
         p {
             font-family: 'Roboto', sans-serif;
@@ -26,10 +32,6 @@ header {
             text-align: center;
             letter-spacing: 0.0075em;
             color: #000000;
-
-            &:last-child {
-                cursor: pointer;
-            }
         }
     }
 }

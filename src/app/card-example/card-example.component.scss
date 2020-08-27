@@ -1,12 +1,13 @@
 .container {
     display: flex;
-    height: 100vh;
     overflow-y: hidden;
+    flex-wrap: wrap;
+    flex-direction: horizontal;
     .phone-next {
-        width:638px;
+        margin-top: 100px;
+        width:538px;
     }
     .app-start-area{
-        width: 100%;
         margin-top:141px;
         display: flex;
         flex-direction: column;
@@ -24,6 +25,35 @@
         }
         .qr-code{
             margin-bottom: 65px;
-        }
+        }       
     }
+}
+.footer{
+    width: 100%;
+    
+}
+.store-button-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .middle-text{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.0075em;
+        margin-right: 50px;
+        margin-left: 50px;
+        color: #4D4D4D;
+    }
+}
+.horizontal-line{
+    border: 2px solid #A8A8A8;
+    margin-right: 72px;
+    margin-left: 72px;
 }
