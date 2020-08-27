@@ -17,7 +17,6 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { PhoneComponent } from './phone/phone.component';
 
 import { AngularFireModule } from '@angular/fire';
-import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from 'src/environments/environment';
 
@@ -48,7 +47,6 @@ import { DataService } from './data.service';
     FormsModule,
     MatInputModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAnalyticsModule,
     AngularFirestoreModule,
     
     
