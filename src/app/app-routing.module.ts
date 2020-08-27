@@ -9,13 +9,13 @@ import { CardExampleComponent } from './card-example/card-example.component';
 
 
 const routes: Routes = [
-  { path: ' ', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomepageComponent },
+  { path: ' ', redirectTo: '/home', pathMatch: 'full'},
+  { path: 'home', component: HomepageComponent},
   { path: 'theme-selection', component: ThemeSelComponent },
   { path: 'punches-count', component: CountComponent },
   { path: 'business-details', component: BusinessDetailsComponent },
   { path: 'card-example', component: CardExampleComponent },
-  { path: '**', redirectTo: '/home', pathMatch: 'full' }
+  { path: '**', redirectTo: '/home', pathMatch: 'full'}
 ];
 
 @NgModule({
