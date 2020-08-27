@@ -7,9 +7,12 @@
             </p>
         </div>
         <div class="last-section">
-            <p (click)="openSignUpPopup()" class="text">
+            <p (click)="openSignUpPopup()" class="text" *ngIf="!isUserLogged; else userLogged">
                 Log in / Register
             </p>
+            <ng-template #userLogged>
+                <img src="../../assets/images/profile-avatar.png" alt="profile avatar" (click)="signOut()">
+            </ng-template>
         </div>
     </div>
 </header>
