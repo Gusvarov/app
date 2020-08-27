@@ -18,6 +18,7 @@ import { PhoneComponent } from './phone/phone.component';
 
 import { StoreButtonComponent } from './card-example/store-button/store-button.component';
 import { MatInputModule } from '@angular/material/input';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,7 @@ import { MatInputModule } from '@angular/material/input';
     FormsModule,
     MatInputModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
