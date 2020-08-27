@@ -14,7 +14,7 @@ export class DataService {
       locations: [],
     },
     configuration: {
-      templateId: null,
+      templateId: '1',
       count: null,
       title: null
     }
