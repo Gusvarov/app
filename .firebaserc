@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "new-app-b1690": {
+      "hosting": {
+        "app": [
+          "new-app-b1690"
+        ]
+      }
+    }
+  }
+}
