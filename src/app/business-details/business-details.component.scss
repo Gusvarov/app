@@ -1,8 +1,16 @@
+::ng-deep .mat-form-field-underline {
+    display: none;
+}
+// ::ng-deep .mat-form-field-label-wrapper  {
+//     left: 20px !important;
+//     top: 10px;
+// }
 .container {
     display: flex;
     justify-content: space-between;
     height: 100vh;
     overflow-y: hidden;
+
     .form-area {
         width: 60%;
         .subline {
