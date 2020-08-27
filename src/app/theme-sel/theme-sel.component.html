@@ -10,11 +10,10 @@
     </div>
   </div>
   <div class="phone-next">
-    <div class="phone-box" *ngFor="let pic of selectedPic" style="background: url(../../assets/images/{{pic.id}}.png);">
+    <!-- <div class="phone-box" *ngFor="let pic of selectedPic" style="background: url(../../assets/images/{{pic.id}}.png);">
 
-    </div>
-    <button mat-button
-            class="button" 
-            routerLink="/punches-count"
-            routerLinkActive="active">Next</button>
+    </div> -->
+    <app-phone></app-phone>
+    <button mat-button class="button" routerLink="/punches-count" routerLinkActive="active"
+    (click)="addCircles()">Next</button>
   </div>

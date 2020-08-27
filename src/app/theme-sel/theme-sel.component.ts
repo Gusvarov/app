@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-theme-sel',
@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThemeSelComponent implements OnInit {
   pictures = [];
-  selectedPic = [
+   selectedPic = [
     { id: 1 }
   ]
-  sas = 'red'
+
   constructor() { }
 
   ngOnInit() {
@@ -18,14 +18,17 @@ export class ThemeSelComponent implements OnInit {
       this.pictures.push({
         id: i
       })
-
     }
+
   }
   setColor(e) {
     this.selectedPic.pop();
     this.selectedPic.push({
       id: e.target.alt
     });
+ 
+  }
+  addCircles(){
 
   }
 }

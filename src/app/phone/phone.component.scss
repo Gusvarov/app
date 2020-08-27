@@ -1,0 +1,87 @@
+.phone-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .circle-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 33px;
+        color: #9DA2AC;
+        border-radius: 50%;
+        background: white;
+    }
+
+    .circles {
+        display: flex;
+        max-height: 76%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 60px;
+        width: 70%;
+
+        .circle-item {
+            height: 64px;
+            width: 64px;
+            margin-bottom: 25px;
+            ;
+        }
+    }
+
+    .circles_m {
+        display: flex;
+        max-height: 76%;
+        flex-wrap: wrap;
+        width: 70%;
+        padding-top: 20px;
+
+        .circle-item {
+            height: 45px;
+            width: 45px;
+            margin: 7px 5px;
+
+        }
+    }
+
+    .circles_l {
+        display: flex;
+        height: 65%;
+        flex-wrap: wrap;
+        width: 70%;
+        padding: 56px 0 34px 0;
+        flex-direction: column;
+        align-items: center;
+
+        .circle-item {
+            height: 122px;
+            width: 122px;
+            font-size: 36px;
+
+            &:first-child {
+                margin-bottom: 37px;
+            }
+        }
+    }
+
+    .details {
+        width: 100%;
+
+        .line {
+            background: white;
+            border: white;
+            width: 100%;
+            height: 3px;
+            position: absolute;
+            bottom: 64px;
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+}
