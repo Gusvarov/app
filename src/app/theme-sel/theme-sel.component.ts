@@ -6,10 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./theme-sel.component.scss']
 })
 export class ThemeSelComponent implements OnInit {
-
+  pictures = [];
+  selectedPic = [
+    { id: 1 }
+  ]
+  sas = 'red'
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit() {
+    for (let i = 1; i <= 16; i++) {
+      this.pictures.push({
+        id: i
+      })
 
+    }
+  }
+  setColor(e) {
+    this.selectedPic.pop();
+    this.selectedPic.push({
+      id: e.target.alt
+    });
+
+  }
 }
+
+

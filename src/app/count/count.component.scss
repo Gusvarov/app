@@ -3,43 +3,110 @@
     justify-content: space-between;
     height: 100vh;
 
+    .counter-section {
+        .counter {
+            display: flex;
+            margin-top: 60px;
+            align-items: center;
+            width: 255px;
+            justify-content: space-between;
+
+            h3 {
+                margin: 0;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 45px;
+                line-height: 31px;
+                letter-spacing: 0.0075em;
+                color: #000000;
+            }
+
+            .btn {
+                height: 61px;
+                width: 61px;
+                border-radius: 50%;
+                border: 2px solid #9DA2AC;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: 60px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
     .phone-box {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        position: relative;
+
+        .circle-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 33px;
+            color: #9DA2AC;
+            border-radius: 50%;
+            background: white;
+        }
 
         .circles {
             display: flex;
+            max-height: 76%;
             justify-content: space-between;
             flex-wrap: wrap;
-            width: 50%;
             padding-top: 60px;
             width: 70%;
+
             .circle-item {
-                margin-bottom: 24px;
                 height: 64px;
-                width: 54px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-weight: 300;
-                font-size: 24px;
-                line-height: 33px;
-                color: #9DA2AC;
-                border-radius: 50%;
-                background: white;
+                width: 64px;
+                margin-bottom: 25px;
+                ;
             }
         }
 
-        .circles-m {
+        .circles_m {
+            display: flex;
+            max-height: 76%;
+            flex-wrap: wrap;
             width: 70%;
             padding-top: 20px;
 
             .circle-item {
                 height: 45px;
                 width: 45px;
-                margin-bottom: 15px;
+                margin: 7px 5px;
+
+            }
+        }
+
+        .circles_l {
+            display: flex;
+            height: 65%;
+            flex-wrap: wrap;
+            width: 70%;
+            padding: 56px 0 34px 0;
+            flex-direction: column;
+            align-items: center;
+
+            .circle-item {
+                height: 122px;
+                width: 122px;
+                font-size: 36px;
+
+                &:first-child {
+                    margin-bottom: 37px;
+                }
             }
         }
 
@@ -51,16 +118,18 @@
                 border: white;
                 width: 100%;
                 height: 3px;
-            }
-
-            p {
-                text-align: center;
+                position: absolute;
+                bottom: 64px;
             }
         }
 
+        p {
+            text-align: center;
+        }
     }
 
-    button {
-        cursor: pointer;
-    }
+}
+
+button {
+    cursor: pointer;
 }

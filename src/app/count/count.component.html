@@ -1,43 +1,36 @@
+<app-header></app-header>
 <div class="container">
   <div class="adding-info">
     <h1 class="title">Number of punches</h1>
     <p class="text">Can be changed later</p>
-    <div class="counter">
+    <div class="counter-section">
       <h2 class="subtitle">Reward (Optional):</h2>
       <p class="text">Set the rewards your customers will receive (up to 18 characters).</p>
-      <input type="text" class="text-input">
+      <input  matInput class="text-input" [(ngModel)]="reward" maxlength="18">
+      <div class="counter">
+        <button class="btn" (click)="increment()">+</button>
+        <h3>{{ counter }}</h3>
+        <button class="btn" (click)="decrement()"><p>-</p></button>
+      </div>
+      
     </div>
   </div>
   <div class="phone-next">
     <div class="phone-box">
-      <div class="circles circles-m">
-        <div class="circle-item">1</div>
-        <div class="circle-item">2</div>
-        <div class="circle-item">3</div>
-        <div class="circle-item">4</div>
-        <div class="circle-item">5</div>
-        <div class="circle-item">6</div>
-        <div class="circle-item">7</div>
-        <div class="circle-item">8</div>
-        <div class="circle-item">9</div>
-        <div class="circle-item">10</div>
-        <div class="circle-item">11</div>
-        <div class="circle-item">12</div>
-        <div class="circle-item">13</div>
-        <div class="circle-item">14</div>
-        <div class="circle-item">15</div>
-        <div class="circle-item">16</div>
-        <div class="circle-item">17</div>
-        <div class="circle-item">18</div>
-        <div class="circle-item">19</div>
-        <div class="circle-item">20</div>
+      <div
+       [ngClass]="{circles: circles.length<=8,circles_m: circles.length>8,circles_l: circles.length<=2}">
+        <div class="circle-item" *ngFor="let circle of circles">{{ circle.id }}</div>
+
       </div>
       <div class="details">
         <hr class="line">
-        <p class="text">Cup of coffee</p>
+        <p class="text">{{ reward }}</p>
       </div>
     </div>
-    <button class="button" routerLink="/business-details" routerLinkActive="active">Next</button>
+    <button mat-button
+            class="button"
+            routerLink="/business-details"
+            routerLinkActive="active">Next</button>
   </div>
 
 </div>
