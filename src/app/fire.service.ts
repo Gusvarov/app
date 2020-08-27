@@ -9,11 +9,13 @@ export class FireService {
 
   constructor(private firestore: AngularFirestore) { }
 
-  saveData (data: IData) {
-    this.firestore.collection("data")
+  saveData (id, data: IData) {
+    this.firestore.collection("users").doc(id).set(data)
  
   }
-  data$ = this.firestore
-  .collection("data").valueChanges();
+  getData(id) {
+    return this.firestore
+    .collection<IData>("users").doc(id).valueChanges();
+  }
 
 }
