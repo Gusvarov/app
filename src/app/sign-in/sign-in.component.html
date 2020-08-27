@@ -3,13 +3,15 @@
         <div class="header">
             <h1 class="title">Login</h1>
         </div>
-        <div class="fields">
-            <input matInput class="text-input" placeholder="Email">
-            <input matInput class="text-input" placeholder="Password">
-        </div>
-        <div class="btns">
-            <button class="button" mat-button>Login</button>
-            <p (click)="openSignUpPopup()" class="text">Register</p>
-        </div>
+        <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+            <div class="fields">
+                <input matInput class="text-input" placeholder="Email" formControlName="email">
+                <input matInput class="text-input" placeholder="Password" formControlName="password">
+            </div>
+            <div class="btns">
+                <button class="button" mat-button>Login</button>
+                <p (click)="openSignUpPopup()" class="text">Register</p>
+            </div>
+        </form>
     </div>
 </div>

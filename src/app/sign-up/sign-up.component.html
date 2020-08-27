@@ -3,15 +3,17 @@
         <div class="header">
             <h1 class="title">Register</h1>
         </div>
-        <div class="fields">
-            <input matInput class="text-input" placeholder="Email">
-            <input matInput class="text-input" placeholder="Re-enter Email">
-            <input matInput class="text-input" placeholder="Password">
-            <input matInput class="text-input" placeholder="Re-enter Password">
-        </div>
-        <div class="btns">
-            <button class="button" mat-button>Register</button>
-            <p (click)="openSignInPopup()" class="text">Login</p>
-        </div>
+        <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+            <div class="fields">
+                <input matInput class="text-input" placeholder="Email" formControlName="email">
+                <input matInput class="text-input" placeholder="Re-enter Email" formControlName="reEmail">
+                <input matInput class="text-input" placeholder="Password" formControlName="password">
+                <input matInput class="text-input" placeholder="Re-enter Password" formControlName="rePassword">
+            </div>
+            <div class="btns">
+                <button class="button" mat-button>Register</button>
+                <p (click)="openSignInPopup()" class="text">Login</p>
+            </div>
+        </form>
     </div>
 </div>

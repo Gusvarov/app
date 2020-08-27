@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, FormBuilder, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,13 +15,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { PhoneComponent } from './phone/phone.component';
-
 import { AngularFireModule } from '@angular/fire';
-import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from 'src/environments/environment';
-
-
 import { StoreButtonComponent } from './card-example/store-button/store-button.component';
 import { MatInputModule } from '@angular/material/input';
 import { DataService } from './data.service';
@@ -38,7 +34,7 @@ import { DataService } from './data.service';
     SignInComponent,
     SignUpComponent,
     PhoneComponent,
-    StoreButtonComponent,
+    StoreButtonComponent
   ],
   imports: [
     BrowserModule,
@@ -48,10 +44,8 @@ import { DataService } from './data.service';
     FormsModule,
     MatInputModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAnalyticsModule,
-    AngularFirestoreModule,
-    
-    
+    ReactiveFormsModule,
+    AngularFirestoreModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
