@@ -8,14 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class CountComponent implements OnInit {
   counter: number = 2;
   reward = '';
-
+  selectedPic = [
+    // { id: 1 }
+  ]
   circles = [
     { id: 1 },
     { id: 2 },
   ]
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+  
   }
   increment() {
     if (this.counter < 20) {

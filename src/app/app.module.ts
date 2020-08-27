@@ -14,6 +14,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
+import { PhoneComponent } from './phone/phone.component';
+
 import { StoreButtonComponent } from './card-example/store-button/store-button.component';
 import { MatInputModule } from '@angular/material/input';
 
@@ -28,6 +30,7 @@ import { MatInputModule } from '@angular/material/input';
     CardExampleComponent,
     SignInComponent,
     SignUpComponent,
+    PhoneComponent,
     StoreButtonComponent,
   ],
   imports: [
