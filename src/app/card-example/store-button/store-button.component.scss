@@ -1,0 +1,60 @@
+.store-button{
+    border-radius: 15px;
+    width: 255px;
+    height: 58px;
+    display: flex;
+    box-sizing: border-box;
+    text-align: left;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-right:35px;
+    margin-left: 35px;
+    .store-logo{
+        vertical-align: middle;
+        margin-left: 15px;
+        margin-right: 30px;
+        margin-top: 5px;
+    }
+    .text-wrapper{
+        width: 150px;
+        .top-mac-text{
+            // position: relative;
+            // bottom: 45px;
+            // left: 80px;
+            display: inline-block;
+            vertical-align: top;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+    
+            /* White */
+        }
+        .bottom-mac-text{
+            // position: relative;
+            // left: 95px;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            vertical-align: top;
+            display: inline-block;
+    
+            // vertical-align: bottom;
+            /* White */
+          }
+    }
+}
+.black-button{
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.grey-button{
+    border: 2px solid #A8A8A8;
+    color: #4C4C4C;
+
+
+
+}

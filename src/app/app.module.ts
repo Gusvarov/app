@@ -13,6 +13,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
+import { StoreButtonComponent } from './card-example/store-button/store-button.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     CardExampleComponent,
     SignInComponent,
     SignUpComponent,
+    StoreButtonComponent,
   ],
   imports: [
     BrowserModule,
