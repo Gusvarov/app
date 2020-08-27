@@ -3,6 +3,10 @@ header {
     height: 100px;
     margin: auto;
 
+    img {
+        cursor: pointer;
+    }
+
     .wrapper {
         display: flex;
         justify-content: space-between;
