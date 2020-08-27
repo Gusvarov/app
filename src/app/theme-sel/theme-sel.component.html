@@ -3,32 +3,14 @@
     <h1 class="title">Select your name</h1>
     <p class="text">Can be changed later</p>
     <div class="pics">
-      <div class="pic-item"><img src="../../assets/images/1.png" alt=""></div>
-      <div class="pic-item"><img src="../../assets/images/2.png" alt=""></div>
-      <div class="pic-item"><img src="../../assets/images/3.png" alt=""></div>
-      <div class="pic-item"><img src="../../assets/images/4.png" alt=""></div>
-      <div class="pic-item"><img src="../../assets/images/5.png" alt=""></div>
-      <div class="pic-item"><img src="../../assets/images/6.png" alt=""></div>
-      <div class="pic-item"><img src="../../assets/images/7.png" alt=""></div>
-      <div class="pic-item"><img src="../../assets/images/8.png" alt=""></div>
-      <div class="pic-item"><img src="../../assets/images/9.png" alt=""></div>
-      <div class="pic-item"><img src="../../assets/images/10.png" alt=""></div>
-      <div class="pic-item"><img src="../../assets/images/11.png" alt=""></div>
-      <div class="pic-item"><img src="../../assets/images/12.png" alt=""></div>
-      <div class="pic-item"><img src="../../assets/images/13.png" alt=""></div>
-      <div class="pic-item"><img src="../../assets/images/14.png" alt=""></div>
-      <div class="pic-item"><img src="../../assets/images/15.png" alt=""></div>
-      <div class="pic-item"><img src="../../assets/images/16.png" alt=""></div>
-
-
+      <div class="pic-item" *ngFor="let pic of pictures">
+        <img src='../../assets/images/{{ pic.id }}.png' alt="{{pic.id}}" (click)="setColor($event)">
+      </div>
     </div>
   </div>
   <div class="phone-next">
-    <div class="phone-box">
+    <div class="phone-box" *ngFor="let pic of selectedPic" style="background: url(../../assets/images/{{pic.id}}.png);">
 
     </div>
-    <button class="button" 
-            routerLink="/punches-count"
-            routerLinkActive="active">Next</button>
+    <button class="button" routerLink="/punches-count" routerLinkActive="active">Next</button>
   </div>
-</div>

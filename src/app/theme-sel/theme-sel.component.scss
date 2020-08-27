@@ -24,15 +24,20 @@
             overflow-y: scroll;
             overflow-x: hidden;
             height: 100%;
+
             &::-webkit-scrollbar {
                 display: none;
             }
-           
-            
+
+
             .pic-item {
                 width: 160px;
                 height: 243px;
                 margin-bottom: 40px;
+
+                &:hover {
+                    cursor: pointer;
+                }
 
                 img {
                     height: 100%;
