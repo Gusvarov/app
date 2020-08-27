@@ -24,6 +24,7 @@ import { environment } from 'src/environments/environment';
 
 import { StoreButtonComponent } from './card-example/store-button/store-button.component';
 import { MatInputModule } from '@angular/material/input';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,7 @@ import { MatInputModule } from '@angular/material/input';
     
     
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
